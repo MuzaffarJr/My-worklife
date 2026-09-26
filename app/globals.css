@@ -15,3 +15,27 @@
   .hero-visual{width:88vw!important;height:64vh!important;right:-20vw!important;top:17vh!important;opacity:.68!important}
   .hero-visual img{--fade-x:linear-gradient(to right,transparent 0%,#000 20%,#000 80%,transparent 100%)}
 }
+
+/* ---------- Mobile & tablet ---------- */
+@media(max-width:900px){
+  #hero{flex-direction:column;justify-content:flex-end;min-height:auto!important;padding-top:84px;padding-bottom:48px!important}
+  #hero .hero-visual{position:relative!important;inset:auto!important;right:auto!important;top:auto!important;order:-1;width:100%!important;max-width:560px;height:auto!important;margin:0 auto 8px;opacity:1!important}
+  #hero .hero-visual img{--fade-x:linear-gradient(to right,transparent 0%,#000 14%,#000 86%,transparent 100%);--fade-y:linear-gradient(to bottom,transparent 0%,#000 12%,#000 72%,transparent 100%)}
+}
+@media(max-width:700px){
+  .display{font-size:15vw;line-height:.86}
+  #hero h1 .hero-line:nth-child(2){padding-left:6vw!important}
+  #hero p.hero-line{font-size:16px!important;max-width:none!important;margin:0}
+  main>section:not(#hero){padding-top:72px!important;padding-bottom:72px!important}
+  #about>div:last-child{grid-template-columns:1fr!important;gap:24px!important;margin-top:28px!important}
+  #about+section>.reveal{grid-template-columns:36px 1fr!important;gap:6px 14px!important;padding:26px 0!important;align-items:start!important}
+  #about+section>.reveal>div:last-child{grid-column:2;font-size:14px}
+  #work h2{margin:24px 0 40px!important}
+  .project-card{padding:28px 0!important;gap:6px 14px!important}
+  .project-card:hover{padding-left:0;padding-right:0}
+  #work+section .reveal>div{min-height:auto!important;padding:24px!important}
+  #work+section .reveal p{font-size:20px!important;margin:12px 0 0}
+  .contact-section h2.display{margin:28px 0!important}
+  .lead-form{padding:22px}
+  .social-link span:nth-child(2){overflow-wrap:anywhere}
+}
